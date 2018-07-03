@@ -1,0 +1,13 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div data-bind="text: str"></div>
+<div data-bind="text: num"></div>
+<div data-bind="visible: bool">Visible Binding</div>
+<br />
+<button data-bind="click: eventHandler">Dom Event</button>
+
+@section scripts {
+    <script src="~/Scripts/app/list.js" type="module"></script>
+}
